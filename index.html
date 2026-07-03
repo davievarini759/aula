@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog do Davi</title>
+        <style>
+            header{
+                background-color: #672077;
+                color: #ffffff;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 16px;
+            }
+            main{
+                background-color: #ffffff;
+                color: #672077;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 16px;
+                display: flex;
+            }
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            .artigo-autor {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Blog tech do Davi</h1>
+            <p>Vamos compartilhar conhecimentos sobre tecnologia e programação</p>
+        </header>
+        <main>
+            <img src="Circuito.png" alt="Ícone minimalista e moderno para blog de tecnologia sobre fundo quadrado com cantos arredondados, dividido simetricamente entre as cores branca e roxo escuro. No centro, destaca-se um chip eletrônico estilizado em formato vetorial com linhas finas e simétricas que representam trilhas de circuito. O chip possui alto contraste, exibindo elementos brancos sobre a metade roxa, ideal para uso como favicon ou avatar de tecnologia.">
+            <div>
+                <h2>Primeiro post</h2>
+                <p class="artigo-autor">Por: Davi Evarini.</p>
+                <p>Seja muito bem vindo ao meu blog, sobre programação e robotica.</p>
+                <button>🎃 <span>0</span></button>
+            </div>
+        </main>
+    </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+    }
+</script>
+</html>
